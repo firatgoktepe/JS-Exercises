@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Quiz App</title>
+</head>
+<body>
+   
+<div class="container mt-2 h100">
+ <div class="row d-flex justify-content-md-center align-items-center vh-100">
+  <div class="col-12">
+    
+    <div class="card">
+        <h5 class="card-header">Quiz</h5>
+        <div class="card-body">
+          <h5 id="question" class="card-title">Questions here</h5>
+          <hr>
+          <div id="buttons">
+            <button id="btn0" class="btn btn-primary"><span id="choice0">Option 0</span></button>
+            <button id="btn1" class="btn btn-primary"><span id="choice1">Option 1</span></button>
+            <button id="btn2" class="btn btn-primary"><span id="choice2">Option 2</span></button>
+            <button id="btn3" class="btn btn-primary"><span id="choice3">Option 3</span></button>
+          </div>
+        </div>
+        <div id="progress" class="card-footer"></div>
+    </div>
+   </div>
+  </div>
+</div>
+
+<style>
+
+   button{
+    outline: none !important;
+    box-shadow: none !important;
+   }
+
+</style>
+    
+
+<script src="test.js"></script>    
+</body>
+</html>
