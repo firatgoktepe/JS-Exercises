@@ -127,7 +127,7 @@ function guess(id,guess){
 }
 
 function showScore(){
-    var html = `<h2>Score ${quiz.score}</h2> <button id="btn_new" class="btn btn-primary" onclick="location.reload();">Yeniden Dene</button> `;
+    var html = `<h2>Skor: ${quiz.score}</h2> <button id="btn_new" class="btn btn-primary" onclick="location.reload();">Yeniden Dene</button> `;
 
     document.querySelector('.card-body').innerHTML = html;
 }
@@ -135,7 +135,7 @@ function showScore(){
 function showProgress(){
     var totalQuestion = quiz.questions.length;
     var questionNumber = quiz.questionIndex + 1;
-    document.querySelector('#progress').innerHTML = 'Question ' + questionNumber + ' of ' + totalQuestion;
+    document.querySelector('#progress').innerHTML = 'Soru ' + questionNumber + ' / ' + totalQuestion;
 }
 
 
