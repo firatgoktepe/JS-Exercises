@@ -17,7 +17,7 @@ UI.prototype.addCourseToList = function(course){
             <td><img src="img/${course.image}"/></td>
             <td>${course.title}</td>
             <td>${course.instructor}</td>
-            <td><a href="#" class="btn btn-danger btn-sm delete">Delete</a></td>
+            <td><a href="#" class="btn btn-danger btn-sm delete">Sil</a></td>
          </tr>    
     `;
 
@@ -67,7 +67,7 @@ document.getElementById('new-course').addEventListener('submit',function(e){
     const ui = new UI();
 
     if(title==='' || instructor ==='' || image === ''){
-        ui.showAlert('Please complete the form','warning');
+        ui.showAlert('Lutfen formu eksiksiz doldurunuz!','warning');
     }else{
         // add course to list
         ui.addCourseToList(course); 
@@ -75,7 +75,7 @@ document.getElementById('new-course').addEventListener('submit',function(e){
         // clear controls
         ui.clearControls();
 
-        ui.showAlert('the course has been added','success');
+        ui.showAlert('Kurs Eklendi!','success');
     }
 
     e.preventDefault();
@@ -84,5 +84,5 @@ document.getElementById('new-course').addEventListener('submit',function(e){
 document.getElementById('course-list').addEventListener('click',function(e){
     const ui = new UI();
     ui.deleteCourse(e.target);
-    ui.showAlert('the course has been deleted','danger');
+    ui.showAlert('Kurs silindi','danger');
 });
