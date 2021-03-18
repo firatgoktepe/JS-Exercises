@@ -17,7 +17,7 @@ class UI {
             <td><img src="img/${course.image}"/></td>
             <td>${course.title}</td>
             <td>${course.instructor}</td>
-            <td><a href="#" data-id="${course.courseId}" class="btn btn-danger btn-sm delete">Delete</a></td>
+            <td><a href="#" data-id="${course.courseId}" class="btn btn-danger btn-sm delete">Sil</a></td>
          </tr>    
     `;
 
@@ -118,7 +118,7 @@ document.getElementById('new-course').addEventListener('submit',function(e){
     const ui = new UI();   
 
     if(title==='' || instructor ==='' || image === ''){
-        ui.showAlert('Please complete the form','warning');
+        ui.showAlert('Lutfen formu eksiksiz doldurunuz!','warning');
     }else{
         // add course to list
         ui.addCourseToList(course); 
@@ -129,7 +129,7 @@ document.getElementById('new-course').addEventListener('submit',function(e){
         // clear controls
         ui.clearControls();
 
-        ui.showAlert('the course has been added','success');
+        ui.showAlert('Kurs Eklendi!','success');
     }
 
     e.preventDefault();
@@ -143,6 +143,6 @@ document.getElementById('course-list').addEventListener('click',function(e){
         // delete from LS
         Storage.deleteCourse(e.target);
 
-        ui.showAlert('the course has been deleted','danger');
+        ui.showAlert('Kurs Silindi!','danger');
     }
 });
