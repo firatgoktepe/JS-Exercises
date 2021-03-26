@@ -5,17 +5,17 @@ Some small JS Apps and functions
 ### Apps
 
 - Api App
-- Chess AI
+- Chess AI App
 - Exchange App
-- Form-Validator
-- Guess the Number
-- Music Player
+- Form-Validator App
+- Guess the Number App
+- Music Player App
 - Course App
 - Movie App
 - Quiz App
-- Number Match Game 
+- Number Match Game App
 - Photo Effect App
 - Quick tip App
-- Running Tracker
+- Running Tracker App
 - Simple get product App
 
