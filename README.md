@@ -1,6 +1,6 @@
 # JS-Exercises
 
-Some small JS Apps and functions
+Some JS Apps and functions
 
 ### Apps
 
